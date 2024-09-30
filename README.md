@@ -1,1 +1,3 @@
 # fluidos-fusion-check
+
+Fusion Check proposal for Use Case Grant aims to develop an interoperable set of software components for FLUIDOS and deploy a dashboard interface aimed at facility managers that need to optimize communication between IoT devices, edge servers and the cloud in sensitive infrastructure such as EV Charging station hubs, parking lots and corporate offices with access control IoT devices. 
