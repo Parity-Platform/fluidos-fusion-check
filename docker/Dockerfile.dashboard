@@ -1,0 +1,10 @@
+FROM python:3.8-slim
+
+COPY dashboard.py /app/dashboard.py
+WORKDIR /app
+
+RUN pip install streamlit
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "dashboard.py", "--server.port=8501", "--server.address=0.0.0.0"]

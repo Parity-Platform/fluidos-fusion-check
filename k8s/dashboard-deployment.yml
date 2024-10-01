@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fl-dashboard-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fl-dashboard
+  template:
+    metadata:
+      labels:
+        app: fl-dashboard
+    spec:
+      containers:
+      - name: fl-dashboard
+        image: ghcr.io/Parity-Platform/fluidos-fusion-check/fl-dashboard:latest
+        ports:
+        - containerPort: 8501
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "500m"
+          limits:
+            memory: "512Mi"
+            cpu: "1"

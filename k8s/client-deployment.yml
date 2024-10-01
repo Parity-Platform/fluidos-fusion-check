@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fl-client-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fl-client
+  template:
+    metadata:
+      labels:
+        app: fl-client
+    spec:
+      containers:
+      - name: fl-client
+        image: ghcr.io/Parity-Platform/fluidos-fusion-check/fl-client:latest
+        env:
+        - name: SERVER_ADDRESS
+          value: "your-server-address"
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "500m"
+          limits:
+            memory: "512Mi"
+            cpu: "1"
