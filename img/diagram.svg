@@ -1,0 +1,40 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cloud Cluster -->
+  <g id="cloud-cluster">
+    <rect x="300" y="50" width="200" height="100" fill="#e0f7fa" stroke="#00838f"/>
+    <text x="400" y="70" text-anchor="middle" font-size="16">Cloud Cluster</text>
+    <!-- FL Server -->
+    <rect x="340" y="80" width="40" height="40" fill="#80deea" stroke="#006064"/>
+    <text x="360" y="130" text-anchor="middle" font-size="12">FL Server</text>
+    <!-- Dashboard Interface -->
+    <rect x="420" y="80" width="40" height="40" fill="#80deea" stroke="#006064"/>
+    <text x="440" y="130" text-anchor="middle" font-size="12">Dashboard</text>
+  </g>
+  <!-- Edge Cluster 1 -->
+  <g id="edge-cluster-1">
+    <rect x="100" y="250" width="200" height="150" fill="#e8f5e9" stroke="#2e7d32"/>
+    <text x="200" y="270" text-anchor="middle" font-size="16">Edge Cluster 1</text>
+    <!-- FL Client -->
+    <rect x="140" y="280" width="40" height="40" fill="#a5d6a7" stroke="#1b5e20"/>
+    <text x="160" y="330" text-anchor="middle" font-size="12">FL Client</text>
+    <!-- IoT Device -->
+    <circle cx="220" cy="300" r="20" fill="#c8e6c9" stroke="#388e3c"/>
+    <text x="220" y="330" text-anchor="middle" font-size="12">IoT Device</text>
+  </g>
+  <!-- LIQO Connectivity -->
+  <line x1="340" y1="120" x2="160" y2="280" stroke="#ffab00" marker-end="url(#arrow)"/>
+  <text x="250" y="200" text-anchor="middle" font-size="12" fill="#ff6f00">LIQO</text>
+  <!-- Arrow Marker Definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ffab00"/>
+    </marker>
+  </defs>
+  <!-- Facility Manager -->
+  <g id="facility-manager">
+    <circle cx="700" cy="100" r="20" fill="#fff9c4" stroke="#fbc02d"/>
+    <text x="700" y="130" text-anchor="middle" font-size="12">Facility Manager</text>
+    <!-- Access to Dashboard -->
+    <line x1="680" y1="100" x2="460" y2="100" stroke="#fbc02d" marker-end="url(#arrow)"/>
+  </g>
+</svg>
