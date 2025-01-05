@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fluidos-fusion-check"
+version = "0.1.0"
+description = ""
+authors = ["Alexios Karadimos <karadalex@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.39.0"
+flwr = "^1.11.1"
+torch = "^2.4.1"
+torchvision = "^0.19.1"
+pandas = "^2.2.3"
+matplotlib = "^3.9.2"
+scikit-learn = "^1.5.2"
+opentelemetry-api = "^1.30.0"
+opentelemetry-sdk = "^1.30.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

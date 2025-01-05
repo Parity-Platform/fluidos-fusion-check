@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "data"
+version = "0.1.0"
+description = ""
+authors = ["Alexios Karadimos <karadalex@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+opentelemetry-api = "^1.30.0"
+opentelemetry-sdk = "^1.30.0"
+opentelemetry-exporter-otlp = "^1.30.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
