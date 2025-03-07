@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  sensor-server:
+    image: python:3.9-slim
+    container_name: sensor-endpoint
+    volumes:
+      - ./sensor_server.py:/app/sensor_server.py
+    working_dir: /app
+    command: python sensor_server.py
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1

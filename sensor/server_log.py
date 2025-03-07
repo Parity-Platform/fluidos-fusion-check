@@ -43,7 +43,7 @@ class SensorDataHandler(BaseHTTPRequestHandler):
         self.wfile.write(json.dumps(response).encode('utf-8'))
 
 def run_server(port=8080):
-    server_address = ('', port)
+    server_address = ('0.0.0.0', port)
     httpd = HTTPServer(server_address, SensorDataHandler)
     print(f"Starting sensor data server on port {port}...")
     print(f"Send POST requests to http://localhost:{port}")
@@ -66,4 +66,14 @@ if __name__ == "__main__":
             print(f"Invalid port number: {sys.argv[1]}")
             sys.exit(1)
     
-    run_server(port)
+    # Print debugging information
+    print(f"Python version: {sys.version}")
+    print(f"Starting server on 0.0.0.0:{port}")
+    
+    try:
+        run_server(port)
+    except Exception as e:
+        print(f"Error starting server: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)

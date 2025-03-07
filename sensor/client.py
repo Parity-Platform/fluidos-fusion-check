@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "http://localhost:8080/sensor_values"
+url = "http://46.101.126.196:8080:8080/sensor_values"
 
 payload = json.dumps({
   # Add your data here
